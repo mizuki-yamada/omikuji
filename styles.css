@@ -24,3 +24,28 @@ p{
     font-size: 36px;
     padding: 24px 0;
 }
+
+button{
+    all: unset;
+    width: 100%;
+    background-color: red;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    margin-top: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px #7a0000;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+button:active{
+    /* アクティブクラスを用いる */
+    /* 影の太さを細くする */
+    box-shadow: 0 1px #7a0000;
+    /* デフォルトの影の太さからactive時の太さの差だけ、y方向に下がることでボタンを押し下げる見た目を実現 */
+    transform: translateY(3px);
+}
